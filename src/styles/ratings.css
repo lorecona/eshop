@@ -1,0 +1,32 @@
+.ratingItem {
+    display:flex;
+    align-items:center;
+    margin:2%;
+    border-radius: 3px;
+}
+
+.ratingName {
+    font-weight: 500;
+    font-size: 60%;
+    text-align: start;
+    margin: 1%;
+    margin-left: 2%;
+    margin-right:2%;
+    color:#a468a4;
+}
+
+.ratingMes {
+    font-weight: 300;
+    font-size: 56%;
+    text-align: start;
+    margin: 1%;
+    margin-left: 2%;
+    margin-right:2%;
+}
+
+.ratingList {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}

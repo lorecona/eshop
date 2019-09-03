@@ -1,0 +1,171 @@
+.cart {
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.filled {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top:7.4vw;
+    margin-bottom: 2vw;
+    width:62%;
+}
+
+.empty {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8vw;
+    font-weight: lighter;
+    border-radius: 3px;
+    box-shadow:0  0 9px 2px rgba(178, 130, 174, 0.51);
+}
+
+.cartItem {
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    margin:3%;
+    box-shadow:0  0 10px 1px rgba(177, 113, 177, 0.34);
+    border-radius: 3px;
+    width:100%;
+
+}
+
+.cartItem2 {
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+    border:2px solid rgba(177, 113, 177, 0.34);
+    border-radius: 3px;
+}
+
+.cartImg {
+    margin:1.4%;
+}
+
+.cartName {
+    font-weight: 500;
+    font-size: 1.24vw;
+    text-align: start;
+    margin: 1%;
+    width: 30%;
+    color:#a468a4;
+}
+
+.cartName2 {
+    font-weight: 500;
+    font-size: 0.9vw;
+    text-align: start;
+    margin: 1%;
+    color:#a468a4;
+}
+
+
+.cartItem img {
+    width:150px;
+    height:145px;
+    border-radius: 100px;
+}
+
+.cartDescr {
+    font-weight: 400;
+    font-size: 1.06vw;
+    text-align: start;
+    margin: 1%;
+    width:30%;
+}
+
+.cartDescr2 {
+    font-weight: 400;
+    font-size: 0.9vw;
+    text-align: start;
+    margin: 1%;
+}
+
+.cartPrice2 {
+    color: #dd394d;
+    font-weight: 500;
+    font-size:0.9vw;
+    margin: 1.4%;
+}
+
+.cartQuant {
+    font-weight: 500;
+    color: #6cb6cc;
+    font-size:1.1vw;
+     margin: 1.4%;
+}
+
+.total {
+    display:flex;
+    justify-content: flex-end;
+    align-items: baseline;
+    margin:8vw;
+    margin-bottom: 0.5vw;
+    margin-top:0;
+    width:62%;
+    font-weight: 400;
+    font-size: 1.4vw;
+    letter-spacing: 0.3px;
+}
+
+.contactInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin:8vw;
+    margin-top:0;
+    width:35%;
+}
+
+.contactTitle {
+    display:flex;
+    justify-content: flex-start;
+    margin:8vw;
+    margin-bottom: 2vw;
+    margin-top:0;
+    width:62%;
+    font-weight: 400;
+    font-size: 1.4vw;
+    letter-spacing: 0.3px;
+}
+
+.plus {
+    font-size: 1.1vw;
+    font-weight: 700;
+}
+
+.cartButton2 {
+    width:10%;
+    height:20%;
+    margin:9.6%;
+}
+
+.adjustCart {
+    display:flex;
+    width: 27%;
+}
+.shipping {
+    font-size: 1.1vw;
+    font-weight: 400;
+    margin-left:2%;
+    color:#dd394d;
+}
+
+.wholesum {
+    display:flex;
+    justify-content: flex-end;
+    align-items: baseline;
+    margin:8vw;
+    margin-bottom: 5vw;
+    margin-top:0;
+    width:62%;
+    font-weight: 400;
+    font-size: 1.4vw;
+    letter-spacing: 0.3px;
+}

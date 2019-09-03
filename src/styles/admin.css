@@ -1,0 +1,24 @@
+.adminTitle {
+    display:flex;
+    justify-content: center;
+    margin-top:10%;
+    margin-bottom: 2%;
+    font-weight: 500;
+    font-size: 126%;
+    letter-spacing: 0.5px;
+    color:#a468a4;
+}
+
+.admin {
+    width:100%;
+}
+
+.formAdmin {
+    width:40%;
+}
+
+.waitingAdmin{
+    width:100%;
+    display:flex;
+    justify-content: center;
+}

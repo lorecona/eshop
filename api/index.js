@@ -1,0 +1,153 @@
+const express = require('express');
+const mongoose = require('mongoose');
+const setConfigExpress = require('./config/express');
+const db = {
+    "shopItems": [
+        {
+            "id": 1,
+            "name": "First shop item",
+            "description": "First shop item description",
+            "CID": 1,
+            "price": 99,
+            "distributor": "Tomal",
+            "image": "https://image.shutterstock.com/image-photo/bright-spring-view-cameo-island-260nw-1048185397.jpg",
+            "quantity": 0
+        },
+        {
+            "id": 2,
+            "name": "Second shop item",
+            "description": "Second shop item description, Second shop item description, Second shop item description, Second shop item description ",
+            "CID": 2,
+            "price": 144,
+            "distributor": "Damar",
+            "image": "https://image.shutterstock.com/image-photo/mountains-during-sunset-beautiful-natural-260nw-407021107.jpg",
+            "quantity": 0
+        },
+        {
+            "id": 3,
+            "name": "Third shop item",
+            "description": "Second shop item description, Second shop item description, Second shop item description, Second shop item description ",
+            "CID": 3,
+            "price": 599,
+            "distributor": "Damar",
+            "image": "https://image.shutterstock.com/image-photo/beautiful-water-drop-on-dandelion-600w-789676552.jpg",
+            "quantity": 0
+        },
+        {
+            "id": 4,
+            "name": "Fourth shop item",
+            "description": "Fourth shop item description, Second shop item description, Second shop item description, Second shop item description ",
+            "CID": 4,
+            "price": 203,
+            "distributor": "Damar",
+            "image": "https://image.shutterstock.com/image-photo/bright-spring-view-cameo-island-260nw-1048185397.jpg",
+            "quantity": 0
+        },
+        {
+            "id": 5,
+            "name": "Fifth shop item",
+            "description": "Fifth shop item description, Second shop item description, Second shop item description, Second shop item description ",
+            "CID": 5,
+            "price": 411,
+            "distributor": "Damar",
+            "image": "https://image.shutterstock.com/image-photo/bright-spring-view-cameo-island-260nw-1048185397.jpg",
+            "quantity": 0
+        },
+        {
+            "name": "Sixth Item",
+            "description": "This is the sixth item's description",
+            "CID": 4,
+            "price": "58",
+            "distributor": "SomeDist",
+            "image": "https://image.shutterstock.com/image-photo/mountains-during-sunset-beautiful-natural-260nw-407021107.jpg",
+            "quantity": 0,
+            "id": 6
+        },
+        {
+            "name": "Seventh shop item",
+            "description": "Seventh shop item's description",
+            "price": 100,
+            "CID": 3,
+            "distributor": "SomeDist",
+            "image": "https://image.shutterstock.com/image-photo/mountains-during-sunset-beautiful-natural-260nw-407021107.jpg",
+            "quantity": 0,
+            "id": 7
+        }
+    ],
+    "categories": [
+        {
+            "id": 1,
+            "name": "Sports & Outdoors"
+        },
+        {
+            "id": 2,
+            "name": "Electronics"
+        },
+        {
+            "id": 3,
+            "name": "Computers"
+        },
+        {
+            "id": 4,
+            "name": "Beauty & Personal Care"
+        },
+        {
+            "id": 5,
+            "name": "Books"
+        },
+        {
+            "name": "Arts & Crafts",
+            "id": 6
+        }
+    ],
+    "orders": [
+        {
+            "name": "Andrei Petrescu",
+            "address": "Address1",
+            "phone": "0744780712",
+            "items": [
+                {
+                    "id": 2,
+                    "name": "Second shop item, second shop item",
+                    "description": "Second shop item description, Second shop item description, Second shop item description, Second shop item description ",
+                    "CID": 2,
+                    "price": 144,
+                    "distributor": "Damar",
+                    "image": "https://image.shutterstock.com/image-photo/bright-spring-view-cameo-island-260nw-1048185397.jpg",
+                    "quantity": 1
+                }
+            ],
+            "id": 1
+        },
+        {
+            "name": "Ana Ghiorghescu",
+            "address": "Venus 12/45",
+            "phone": "0744210082",
+            "items": [
+                {
+                    "id": 2,
+                    "name": "Second shop item, second shop item",
+                    "description": "Second shop item description, Second shop item description, Second shop item description, Second shop item description ",
+                    "CID": 2,
+                    "price": 144,
+                    "distributor": "Damar",
+                    "image": "https://image.shutterstock.com/image-photo/bright-spring-view-cameo-island-260nw-1048185397.jpg",
+                    "quantity": 1
+                }
+            ],
+            "id": 2
+        }
+    ]
+};
+
+const app = express();
+const port = 3001;
+
+setConfigExpress(app);
+
+app.listen(port, () => {
+    console.log(`Example app listening on port ${port}!`)
+    mongoose.connect('mongodb://localhost:27017/eshop', {useNewUrlParser: true})
+        .then(success => console.log('success'))
+        .catch(error => console.log('error', error))
+});
